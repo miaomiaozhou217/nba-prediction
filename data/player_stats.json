@@ -1,0 +1,354 @@
+{
+  "Jayson Tatum": {
+    "team": "BOS",
+    "ppg": 28.0
+  },
+  "Jaylen Brown": {
+    "team": "BOS",
+    "ppg": 24.5
+  },
+  "Kristaps Porzingis": {
+    "team": "BOS",
+    "ppg": 20.0
+  },
+  "Giannis Antetokounmpo": {
+    "team": "MIL",
+    "ppg": 30.5
+  },
+  "Damian Lillard": {
+    "team": "MIL",
+    "ppg": 25.0
+  },
+  "Khris Middleton": {
+    "team": "MIL",
+    "ppg": 18.0
+  },
+  "Joel Embiid": {
+    "team": "PHI",
+    "ppg": 32.0
+  },
+  "Tyrese Maxey": {
+    "team": "PHI",
+    "ppg": 26.0
+  },
+  "Paul George": {
+    "team": "PHI",
+    "ppg": 22.0
+  },
+  "Jalen Brunson": {
+    "team": "NY",
+    "ppg": 28.0
+  },
+  "Karl-Anthony Towns": {
+    "team": "NY",
+    "ppg": 24.0
+  },
+  "Mikal Bridges": {
+    "team": "BKN",
+    "ppg": 21.0
+  },
+  "Donovan Mitchell": {
+    "team": "CLE",
+    "ppg": 27.0
+  },
+  "Darius Garland": {
+    "team": "CLE",
+    "ppg": 22.0
+  },
+  "Evan Mobley": {
+    "team": "CLE",
+    "ppg": 17.0
+  },
+  "Paolo Banchero": {
+    "team": "ORL",
+    "ppg": 25.0
+  },
+  "Franz Wagner": {
+    "team": "ORL",
+    "ppg": 20.0
+  },
+  "Jalen Suggs": {
+    "team": "ORL",
+    "ppg": 15.0
+  },
+  "Tyrese Haliburton": {
+    "team": "IND",
+    "ppg": 24.0
+  },
+  "Pascal Siakam": {
+    "team": "TOR",
+    "ppg": 22.0
+  },
+  "Myles Turner": {
+    "team": "IND",
+    "ppg": 17.0
+  },
+  "Jimmy Butler": {
+    "team": "MIA",
+    "ppg": 23.0
+  },
+  "Bam Adebayo": {
+    "team": "MIA",
+    "ppg": 19.0
+  },
+  "Tyler Herro": {
+    "team": "MIA",
+    "ppg": 22.0
+  },
+  "Shai Gilgeous-Alexander": {
+    "team": "OKC",
+    "ppg": 31.0
+  },
+  "Jalen Williams": {
+    "team": "OKC",
+    "ppg": 20.0
+  },
+  "Chet Holmgren": {
+    "team": "OKC",
+    "ppg": 18.0
+  },
+  "Nikola Jokic": {
+    "team": "DEN",
+    "ppg": 29.0
+  },
+  "Jamal Murray": {
+    "team": "DEN",
+    "ppg": 22.0
+  },
+  "Michael Porter Jr.": {
+    "team": "DEN",
+    "ppg": 17.0
+  },
+  "LeBron James": {
+    "team": "LAL",
+    "ppg": 25.0
+  },
+  "Anthony Davis": {
+    "team": "LAL",
+    "ppg": 27.0
+  },
+  "Austin Reaves": {
+    "team": "LAL",
+    "ppg": 18.0
+  },
+  "Stephen Curry": {
+    "team": "GS",
+    "ppg": 28.0
+  },
+  "Andrew Wiggins": {
+    "team": "GS",
+    "ppg": 16.0
+  },
+  "Draymond Green": {
+    "team": "GS",
+    "ppg": 8.0
+  },
+  "Anthony Edwards": {
+    "team": "MIN",
+    "ppg": 27.0
+  },
+  "Julius Randle": {
+    "team": "MIN",
+    "ppg": 22.0
+  },
+  "Rudy Gobert": {
+    "team": "MIN",
+    "ppg": 14.0
+  },
+  "Kevin Durant": {
+    "team": "PHX",
+    "ppg": 28.0
+  },
+  "Devin Booker": {
+    "team": "PHX",
+    "ppg": 27.0
+  },
+  "Bradley Beal": {
+    "team": "PHX",
+    "ppg": 19.0
+  },
+  "Luka Doncic": {
+    "team": "DAL",
+    "ppg": 31.0
+  },
+  "Kyrie Irving": {
+    "team": "DAL",
+    "ppg": 25.0
+  },
+  "Klay Thompson": {
+    "team": "DAL",
+    "ppg": 14.0
+  },
+  "James Harden": {
+    "team": "LAC",
+    "ppg": 21.0
+  },
+  "Norman Powell": {
+    "team": "LAC",
+    "ppg": 23.0
+  },
+  "Kawhi Leonard": {
+    "team": "LAC",
+    "ppg": 23.0
+  },
+  "De'Aaron Fox": {
+    "team": "SAC",
+    "ppg": 26.0
+  },
+  "Domantas Sabonis": {
+    "team": "SAC",
+    "ppg": 20.0
+  },
+  "DeMar DeRozan": {
+    "team": "SAC",
+    "ppg": 21.0
+  },
+  "Alperen Sengun": {
+    "team": "HOU",
+    "ppg": 22.0
+  },
+  "Jalen Green": {
+    "team": "HOU",
+    "ppg": 21.0
+  },
+  "Fred VanVleet": {
+    "team": "HOU",
+    "ppg": 16.0
+  },
+  "Ja Morant": {
+    "team": "MEM",
+    "ppg": 24.0
+  },
+  "Jaren Jackson Jr.": {
+    "team": "MEM",
+    "ppg": 23.0
+  },
+  "Desmond Bane": {
+    "team": "MEM",
+    "ppg": 18.0
+  },
+  "Zion Williamson": {
+    "team": "NO",
+    "ppg": 23.0
+  },
+  "CJ McCollum": {
+    "team": "NO",
+    "ppg": 20.0
+  },
+  "Brandon Ingram": {
+    "team": "NO",
+    "ppg": 22.0
+  },
+  "Anfernee Simons": {
+    "team": "POR",
+    "ppg": 23.0
+  },
+  "Jerami Grant": {
+    "team": "POR",
+    "ppg": 17.0
+  },
+  "Deandre Ayton": {
+    "team": "POR",
+    "ppg": 14.0
+  },
+  "Victor Wembanyama": {
+    "team": "SA",
+    "ppg": 25.0
+  },
+  "Devin Vassell": {
+    "team": "SA",
+    "ppg": 18.0
+  },
+  "Keldon Johnson": {
+    "team": "SA",
+    "ppg": 15.0
+  },
+  "Lauri Markkanen": {
+    "team": "UTAH",
+    "ppg": 23.0
+  },
+  "Collin Sexton": {
+    "team": "UTAH",
+    "ppg": 18.0
+  },
+  "Walker Kessler": {
+    "team": "UTAH",
+    "ppg": 10.0
+  },
+  "Trae Young": {
+    "team": "ATL",
+    "ppg": 26.0
+  },
+  "Jalen Johnson": {
+    "team": "ATL",
+    "ppg": 19.0
+  },
+  "Clint Capela": {
+    "team": "ATL",
+    "ppg": 11.0
+  },
+  "Cam Thomas": {
+    "team": "BKN",
+    "ppg": 25.0
+  },
+  "Nic Claxton": {
+    "team": "BKN",
+    "ppg": 12.0
+  },
+  "LaMelo Ball": {
+    "team": "CHA",
+    "ppg": 25.0
+  },
+  "Brandon Miller": {
+    "team": "CHA",
+    "ppg": 20.0
+  },
+  "Miles Bridges": {
+    "team": "CHA",
+    "ppg": 17.0
+  },
+  "Zach LaVine": {
+    "team": "CHI",
+    "ppg": 24.0
+  },
+  "Nikola Vucevic": {
+    "team": "CHI",
+    "ppg": 20.0
+  },
+  "Coby White": {
+    "team": "CHI",
+    "ppg": 18.0
+  },
+  "Cade Cunningham": {
+    "team": "DET",
+    "ppg": 25.0
+  },
+  "Jaden Ivey": {
+    "team": "DET",
+    "ppg": 17.0
+  },
+  "Tim Hardaway Jr.": {
+    "team": "DET",
+    "ppg": 13.0
+  },
+  "Scottie Barnes": {
+    "team": "TOR",
+    "ppg": 21.0
+  },
+  "OG Anunoby": {
+    "team": "TOR",
+    "ppg": 16.0
+  },
+  "Jordan Poole": {
+    "team": "WSH",
+    "ppg": 21.0
+  },
+  "Kyle Kuzma": {
+    "team": "WSH",
+    "ppg": 22.0
+  },
+  "Jonas Valanciunas": {
+    "team": "WSH",
+    "ppg": 12.0
+  }
+}
