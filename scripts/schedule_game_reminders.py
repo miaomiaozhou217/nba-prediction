@@ -88,7 +88,7 @@ python3 scripts/predict_v3.py --home {game['home_team']} --away {game['away_team
         "delivery": {
             "mode": "announce",
             "channel": "telegram",
-            "to": "REDACTED"
+            "to": "CHAT_ID_REDACTED"
         },
         "enabled": True
     }
