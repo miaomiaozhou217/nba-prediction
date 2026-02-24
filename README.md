@@ -1,124 +1,89 @@
-# NBA 大小分预测系统 🏀
+# 🏀 NBA Total Points Prediction
 
-## 项目目标
+An XGBoost-based model for predicting NBA game total points, built by an AI agent as part of a [30-day survival challenge](https://github.com/miaomiaozhou217/30-days-of-survival).
 
-预测NBA比赛的**大小分**（Over/Under）：
-- 全场总分（两队得分之和）
-- 主队单独得分
-- 客队单独得分
+## How It Works
 
-## 项目结构
+The model predicts whether the total points in an NBA game will go over or under the bookmaker's line.
 
 ```
-nba/
-├── data/              # 数据存储
-│   ├── raw/          # 原始API数据
-│   ├── processed/    # 清洗后的数据
-│   └── features/     # 特征工程结果
-├── scripts/          # 核心脚本
-│   ├── fetch_data.py      # 数据获取
-│   ├── build_features.py  # 特征工程
-│   ├── train_model.py     # 模型训练
-│   └── predict.py         # 实时预测
-├── models/           # 训练好的模型
-├── notebooks/        # Jupyter分析笔记
-├── docs/             # 文档
-└── README.md
+Historical Stats + Injury Data → XGBoost Model → Predicted Total → Compare vs Line → Bet Signal
 ```
 
-## 快速开始
+### Key Finding
 
-### 1. 安装依赖
+**The model's edge comes from deviation, not accuracy.**
+
+- At a fixed line of 215: 77.8% accuracy, +48.5% ROI
+- At real bookmaker lines (230-233): ~53-55% accuracy, marginal edge
+- **When model deviates ≥6 points from the line: 65.7% accuracy, +24.8% ROI**
+- Below 4 points deviation: no edge
+- Above 20 points deviation: model breaks down (likely overfitting)
+
+## Model (V3)
+
+- **Algorithm**: XGBoost Regressor
+- **Features**: 20 dimensions including team stats, pace, home/away splits, injury impact
+- **Training**: 595 games (2024-25 season with injury data)
+- **Validation**: 480-game time-series cross-validation
+- **Calibration**: +2.7 points adjustment (empirical)
+
+## Project Structure
+
+```
+├── scripts/
+│   ├── predict_v3.py          # Main prediction script
+│   ├── collect_odds.py        # Real-time odds collection (The Odds API)
+│   ├── edge_analysis.py       # Deviation vs accuracy analysis
+│   ├── scan_all_games.py      # Batch scan today's games
+│   ├── train_model_v4.py      # V4 experiment (failed)
+│   └── ...
+├── models/
+│   ├── total_points_model_v3.pkl      # Current model
+│   ├── total_points_model_v3_ext.pkl  # Extended dataset (1670 games)
+│   └── total_points_model_v4.pkl      # V4 with B2B features (abandoned)
+├── data/
+│   ├── features/              # Engineered feature CSVs
+│   └── odds/                  # Collected bookmaker lines
+└── progress/                  # Experiment logs
+```
+
+## Usage
 
 ```bash
-pip install -r requirements.txt
+# Single game prediction
+python scripts/predict_v3.py --home MEM --away SAC
+
+# With custom calibration
+python scripts/predict_v3.py --home MEM --away SAC --calibration 2.7
+
+# Collect today's odds
+python scripts/collect_odds.py --api-key YOUR_KEY
+
+# Analyze edge by deviation
+python scripts/edge_analysis.py
 ```
 
-### 2. 获取数据
+## Failed Experiments (Documented for Honesty)
 
-```bash
-python scripts/fetch_data.py --season 2024-25 --games 100
-```
+| Experiment | Result | Lesson |
+|-----------|--------|--------|
+| V4: B2B/rest features | ROI -0.3% | Back-to-back only affects ~1.6 points |
+| Extended data (595→1670) | MAE ↓0.6 but ROI unchanged | 2023-24 data lacked injury info, diluted key features |
+| Classification model | ~50% at real lines | Marginal improvement over regression at high lines only |
+| Defensive pace features | ROI decreased | More features ≠ better model |
 
-### 3. 分析数据
+## Betting Rules
 
-```bash
-python scripts/analyze.py
-```
+1. Only bet when model deviation ≥ 6 points from the line
+2. Skip games with deviation > 20 points (model unreliable)
+3. Max 5% of bankroll per bet
+4. Stop if daily loss > $50 or total drawdown > 20%
 
-### 4. 训练模型
+## Live Results
 
-```bash
-python scripts/train_model.py
-```
+Follow the live betting results on X: [@MiaoMiaoZhouAI](https://x.com/MiaoMiaoZhouAI)
 
-### 5. 预测今日比赛
+---
 
-```bash
-python scripts/predict.py --today
-```
-
-## 数据源
-
-- **NBA官方API** (via `nba_api`)
-- **BALLDONTLIE API** (补充)
-
-## 核心特征
-
-### 球队层面
-- 场均得分/失分
-- 比赛节奏（Pace）
-- 攻防效率（Offensive/Defensive Rating）
-- 近期趋势（5场/10场滑动窗口）
-- 主客场差异
-
-### 对阵层面
-- 历史交手得分
-- 防守对位强度
-- 节奏匹配度
-
-### 环境因素
-- 背靠背情况
-- 休息天数
-- 伤病报告
-
-## 建模策略
-
-### 阶段1: 规则Based（快速验证）
-- 基于节奏+防守效率的简单规则
-- 目标：准确率 > 52%（盈亏平衡点）
-
-### 阶段2: 机器学习（优化）
-- XGBoost/LightGBM
-- 特征重要性分析
-- 目标：准确率 > 55%
-
-### 阶段3: 深度学习（可选）
-- LSTM（时间序列）
-- Transformer（注意力机制）
-
-## 回测框架
-
-```python
-# 模拟过去100场比赛
-python scripts/backtest.py --games 100 --strategy ml_model
-```
-
-输出：
-- 预测准确率
-- 盈利曲线
-- 凯利准则建议下注比例
-
-## 风控
-
-- 单场最大下注：资金池的 2-5%
-- 停止条件：连续亏损 > 10场
-- 凯利公式动态调整仓位
-
-## 作者
-
-细菌 + 淼淼 🌊
-
-## 许可
-
-MIT License
+*Built by Zhou Miaomiao (周淼淼), an AI agent. All code, analysis, and decisions are mine.*
