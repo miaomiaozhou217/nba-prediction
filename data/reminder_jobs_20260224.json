@@ -1,0 +1,211 @@
+[
+  {
+    "name": "NBA\u63d0\u9192: PHI@IND",
+    "schedule": {
+      "kind": "at",
+      "at": "2026-02-25T10:10:00"
+    },
+    "payload": {
+      "kind": "agentTurn",
+      "message": "\ud83d\udd14 **\u6bd4\u8d5b\u5373\u5c06\u5f00\u59cb\uff01**\n\n\ud83d\udcc5 \u6bd4\u8d5b: PHI @ IND\n\u23f0 \u5f00\u8d5b\u65f6\u95f4: 10:30\n\ud83c\udfe5 \u6700\u65b0\u4f24\u75c5: \u8bf7\u786e\u8ba4\n\n\u6267\u884c\u8d5b\u524d\u9884\u6d4b:\ncd ~/projects/nba && \\\npython3 scripts/fetch_injuries.py && \\\npython3 scripts/predict_v3.py --home IND --away PHI\n",
+      "timeoutSeconds": 120
+    },
+    "sessionTarget": "isolated",
+    "delivery": {
+      "mode": "announce",
+      "channel": "telegram",
+      "to": "REDACTED"
+    },
+    "enabled": true
+  },
+  {
+    "name": "NBA\u63d0\u9192: WSH@ATL",
+    "schedule": {
+      "kind": "at",
+      "at": "2026-02-25T10:13:00"
+    },
+    "payload": {
+      "kind": "agentTurn",
+      "message": "\ud83d\udd14 **\u6bd4\u8d5b\u5373\u5c06\u5f00\u59cb\uff01**\n\n\ud83d\udcc5 \u6bd4\u8d5b: WSH @ ATL\n\u23f0 \u5f00\u8d5b\u65f6\u95f4: 10:33\n\ud83c\udfe5 \u6700\u65b0\u4f24\u75c5: \u8bf7\u786e\u8ba4\n\n\u6267\u884c\u8d5b\u524d\u9884\u6d4b:\ncd ~/projects/nba && \\\npython3 scripts/fetch_injuries.py && \\\npython3 scripts/predict_v3.py --home ATL --away WSH\n",
+      "timeoutSeconds": 120
+    },
+    "sessionTarget": "isolated",
+    "delivery": {
+      "mode": "announce",
+      "channel": "telegram",
+      "to": "REDACTED"
+    },
+    "enabled": true
+  },
+  {
+    "name": "NBA\u63d0\u9192: DAL@BKN",
+    "schedule": {
+      "kind": "at",
+      "at": "2026-02-25T10:13:00"
+    },
+    "payload": {
+      "kind": "agentTurn",
+      "message": "\ud83d\udd14 **\u6bd4\u8d5b\u5373\u5c06\u5f00\u59cb\uff01**\n\n\ud83d\udcc5 \u6bd4\u8d5b: DAL @ BKN\n\u23f0 \u5f00\u8d5b\u65f6\u95f4: 10:33\n\ud83c\udfe5 \u6700\u65b0\u4f24\u75c5: \u8bf7\u786e\u8ba4\n\n\u6267\u884c\u8d5b\u524d\u9884\u6d4b:\ncd ~/projects/nba && \\\npython3 scripts/fetch_injuries.py && \\\npython3 scripts/predict_v3.py --home BKN --away DAL\n",
+      "timeoutSeconds": 120
+    },
+    "sessionTarget": "isolated",
+    "delivery": {
+      "mode": "announce",
+      "channel": "telegram",
+      "to": "REDACTED"
+    },
+    "enabled": true
+  },
+  {
+    "name": "NBA\u63d0\u9192: OKC@TOR",
+    "schedule": {
+      "kind": "at",
+      "at": "2026-02-25T10:13:00"
+    },
+    "payload": {
+      "kind": "agentTurn",
+      "message": "\ud83d\udd14 **\u6bd4\u8d5b\u5373\u5c06\u5f00\u59cb\uff01**\n\n\ud83d\udcc5 \u6bd4\u8d5b: OKC @ TOR\n\u23f0 \u5f00\u8d5b\u65f6\u95f4: 10:33\n\ud83c\udfe5 \u6700\u65b0\u4f24\u75c5: \u8bf7\u786e\u8ba4\n\n\u6267\u884c\u8d5b\u524d\u9884\u6d4b:\ncd ~/projects/nba && \\\npython3 scripts/fetch_injuries.py && \\\npython3 scripts/predict_v3.py --home TOR --away OKC\n",
+      "timeoutSeconds": 120
+    },
+    "sessionTarget": "isolated",
+    "delivery": {
+      "mode": "announce",
+      "channel": "telegram",
+      "to": "REDACTED"
+    },
+    "enabled": true
+  },
+  {
+    "name": "NBA\u63d0\u9192: NY@CLE",
+    "schedule": {
+      "kind": "at",
+      "at": "2026-02-25T10:13:00"
+    },
+    "payload": {
+      "kind": "agentTurn",
+      "message": "\ud83d\udd14 **\u6bd4\u8d5b\u5373\u5c06\u5f00\u59cb\uff01**\n\n\ud83d\udcc5 \u6bd4\u8d5b: NY @ CLE\n\u23f0 \u5f00\u8d5b\u65f6\u95f4: 10:33\n\ud83c\udfe5 \u6700\u65b0\u4f24\u75c5: \u8bf7\u786e\u8ba4\n\n\u6267\u884c\u8d5b\u524d\u9884\u6d4b:\ncd ~/projects/nba && \\\npython3 scripts/fetch_injuries.py && \\\npython3 scripts/predict_v3.py --home CLE --away NY\n",
+      "timeoutSeconds": 120
+    },
+    "sessionTarget": "isolated",
+    "delivery": {
+      "mode": "announce",
+      "channel": "telegram",
+      "to": "REDACTED"
+    },
+    "enabled": true
+  },
+  {
+    "name": "NBA\u63d0\u9192: CHA@CHI",
+    "schedule": {
+      "kind": "at",
+      "at": "2026-02-25T11:10:00"
+    },
+    "payload": {
+      "kind": "agentTurn",
+      "message": "\ud83d\udd14 **\u6bd4\u8d5b\u5373\u5c06\u5f00\u59cb\uff01**\n\n\ud83d\udcc5 \u6bd4\u8d5b: CHA @ CHI\n\u23f0 \u5f00\u8d5b\u65f6\u95f4: 11:30\n\ud83c\udfe5 \u6700\u65b0\u4f24\u75c5: \u8bf7\u786e\u8ba4\n\n\u6267\u884c\u8d5b\u524d\u9884\u6d4b:\ncd ~/projects/nba && \\\npython3 scripts/fetch_injuries.py && \\\npython3 scripts/predict_v3.py --home CHI --away CHA\n",
+      "timeoutSeconds": 120
+    },
+    "sessionTarget": "isolated",
+    "delivery": {
+      "mode": "announce",
+      "channel": "telegram",
+      "to": "REDACTED"
+    },
+    "enabled": true
+  },
+  {
+    "name": "NBA\u63d0\u9192: MIA@MIL",
+    "schedule": {
+      "kind": "at",
+      "at": "2026-02-25T11:10:00"
+    },
+    "payload": {
+      "kind": "agentTurn",
+      "message": "\ud83d\udd14 **\u6bd4\u8d5b\u5373\u5c06\u5f00\u59cb\uff01**\n\n\ud83d\udcc5 \u6bd4\u8d5b: MIA @ MIL\n\u23f0 \u5f00\u8d5b\u65f6\u95f4: 11:30\n\ud83c\udfe5 \u6700\u65b0\u4f24\u75c5: \u8bf7\u786e\u8ba4\n\n\u6267\u884c\u8d5b\u524d\u9884\u6d4b:\ncd ~/projects/nba && \\\npython3 scripts/fetch_injuries.py && \\\npython3 scripts/predict_v3.py --home MIL --away MIA\n",
+      "timeoutSeconds": 120
+    },
+    "sessionTarget": "isolated",
+    "delivery": {
+      "mode": "announce",
+      "channel": "telegram",
+      "to": "REDACTED"
+    },
+    "enabled": true
+  },
+  {
+    "name": "NBA\u63d0\u9192: GS@NO",
+    "schedule": {
+      "kind": "at",
+      "at": "2026-02-25T11:10:00"
+    },
+    "payload": {
+      "kind": "agentTurn",
+      "message": "\ud83d\udd14 **\u6bd4\u8d5b\u5373\u5c06\u5f00\u59cb\uff01**\n\n\ud83d\udcc5 \u6bd4\u8d5b: GS @ NO\n\u23f0 \u5f00\u8d5b\u65f6\u95f4: 11:30\n\ud83c\udfe5 \u6700\u65b0\u4f24\u75c5: \u8bf7\u786e\u8ba4\n\n\u6267\u884c\u8d5b\u524d\u9884\u6d4b:\ncd ~/projects/nba && \\\npython3 scripts/fetch_injuries.py && \\\npython3 scripts/predict_v3.py --home NO --away GS\n",
+      "timeoutSeconds": 120
+    },
+    "sessionTarget": "isolated",
+    "delivery": {
+      "mode": "announce",
+      "channel": "telegram",
+      "to": "REDACTED"
+    },
+    "enabled": true
+  },
+  {
+    "name": "NBA\u63d0\u9192: BOS@PHX",
+    "schedule": {
+      "kind": "at",
+      "at": "2026-02-25T12:10:00"
+    },
+    "payload": {
+      "kind": "agentTurn",
+      "message": "\ud83d\udd14 **\u6bd4\u8d5b\u5373\u5c06\u5f00\u59cb\uff01**\n\n\ud83d\udcc5 \u6bd4\u8d5b: BOS @ PHX\n\u23f0 \u5f00\u8d5b\u65f6\u95f4: 12:30\n\ud83c\udfe5 \u6700\u65b0\u4f24\u75c5: \u8bf7\u786e\u8ba4\n\n\u6267\u884c\u8d5b\u524d\u9884\u6d4b:\ncd ~/projects/nba && \\\npython3 scripts/fetch_injuries.py && \\\npython3 scripts/predict_v3.py --home PHX --away BOS\n",
+      "timeoutSeconds": 120
+    },
+    "sessionTarget": "isolated",
+    "delivery": {
+      "mode": "announce",
+      "channel": "telegram",
+      "to": "REDACTED"
+    },
+    "enabled": true
+  },
+  {
+    "name": "NBA\u63d0\u9192: MIN@POR",
+    "schedule": {
+      "kind": "at",
+      "at": "2026-02-25T13:10:00"
+    },
+    "payload": {
+      "kind": "agentTurn",
+      "message": "\ud83d\udd14 **\u6bd4\u8d5b\u5373\u5c06\u5f00\u59cb\uff01**\n\n\ud83d\udcc5 \u6bd4\u8d5b: MIN @ POR\n\u23f0 \u5f00\u8d5b\u65f6\u95f4: 13:30\n\ud83c\udfe5 \u6700\u65b0\u4f24\u75c5: \u8bf7\u786e\u8ba4\n\n\u6267\u884c\u8d5b\u524d\u9884\u6d4b:\ncd ~/projects/nba && \\\npython3 scripts/fetch_injuries.py && \\\npython3 scripts/predict_v3.py --home POR --away MIN\n",
+      "timeoutSeconds": 120
+    },
+    "sessionTarget": "isolated",
+    "delivery": {
+      "mode": "announce",
+      "channel": "telegram",
+      "to": "REDACTED"
+    },
+    "enabled": true
+  },
+  {
+    "name": "NBA\u63d0\u9192: ORL@LAL",
+    "schedule": {
+      "kind": "at",
+      "at": "2026-02-25T13:13:00"
+    },
+    "payload": {
+      "kind": "agentTurn",
+      "message": "\ud83d\udd14 **\u6bd4\u8d5b\u5373\u5c06\u5f00\u59cb\uff01**\n\n\ud83d\udcc5 \u6bd4\u8d5b: ORL @ LAL\n\u23f0 \u5f00\u8d5b\u65f6\u95f4: 13:33\n\ud83c\udfe5 \u6700\u65b0\u4f24\u75c5: \u8bf7\u786e\u8ba4\n\n\u6267\u884c\u8d5b\u524d\u9884\u6d4b:\ncd ~/projects/nba && \\\npython3 scripts/fetch_injuries.py && \\\npython3 scripts/predict_v3.py --home LAL --away ORL\n",
+      "timeoutSeconds": 120
+    },
+    "sessionTarget": "isolated",
+    "delivery": {
+      "mode": "announce",
+      "channel": "telegram",
+      "to": "REDACTED"
+    },
+    "enabled": true
+  }
+]

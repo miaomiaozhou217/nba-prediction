@@ -1,0 +1,59 @@
+[
+  {
+    "name": "NBA\u63d0\u9192: SA@DET",
+    "schedule": {
+      "kind": "at",
+      "at": "2026-02-24T10:10:00"
+    },
+    "payload": {
+      "kind": "agentTurn",
+      "message": "\ud83d\udd14 **\u6bd4\u8d5b\u5373\u5c06\u5f00\u59cb\uff01**\n\n\ud83d\udcc5 \u6bd4\u8d5b: SA @ DET\n\u23f0 \u5f00\u8d5b\u65f6\u95f4: 10:30\n\ud83c\udfe5 \u6700\u65b0\u4f24\u75c5: \u8bf7\u786e\u8ba4\n\n\u6267\u884c\u8d5b\u524d\u9884\u6d4b:\ncd ~/projects/nba && \\\npython3 scripts/fetch_injuries.py && \\\npython3 scripts/predict_v3.py --home DET --away SA\n",
+      "timeoutSeconds": 120
+    },
+    "sessionTarget": "isolated",
+    "delivery": {
+      "mode": "announce",
+      "channel": "telegram",
+      "to": "REDACTED"
+    },
+    "enabled": true
+  },
+  {
+    "name": "NBA\u63d0\u9192: SAC@MEM",
+    "schedule": {
+      "kind": "at",
+      "at": "2026-02-24T11:10:00"
+    },
+    "payload": {
+      "kind": "agentTurn",
+      "message": "\ud83d\udd14 **\u6bd4\u8d5b\u5373\u5c06\u5f00\u59cb\uff01**\n\n\ud83d\udcc5 \u6bd4\u8d5b: SAC @ MEM\n\u23f0 \u5f00\u8d5b\u65f6\u95f4: 11:30\n\ud83c\udfe5 \u6700\u65b0\u4f24\u75c5: \u8bf7\u786e\u8ba4\n\n\u6267\u884c\u8d5b\u524d\u9884\u6d4b:\ncd ~/projects/nba && \\\npython3 scripts/fetch_injuries.py && \\\npython3 scripts/predict_v3.py --home MEM --away SAC\n",
+      "timeoutSeconds": 120
+    },
+    "sessionTarget": "isolated",
+    "delivery": {
+      "mode": "announce",
+      "channel": "telegram",
+      "to": "REDACTED"
+    },
+    "enabled": true
+  },
+  {
+    "name": "NBA\u63d0\u9192: UTAH@HOU",
+    "schedule": {
+      "kind": "at",
+      "at": "2026-02-24T12:13:00"
+    },
+    "payload": {
+      "kind": "agentTurn",
+      "message": "\ud83d\udd14 **\u6bd4\u8d5b\u5373\u5c06\u5f00\u59cb\uff01**\n\n\ud83d\udcc5 \u6bd4\u8d5b: UTAH @ HOU\n\u23f0 \u5f00\u8d5b\u65f6\u95f4: 12:33\n\ud83c\udfe5 \u6700\u65b0\u4f24\u75c5: \u8bf7\u786e\u8ba4\n\n\u6267\u884c\u8d5b\u524d\u9884\u6d4b:\ncd ~/projects/nba && \\\npython3 scripts/fetch_injuries.py && \\\npython3 scripts/predict_v3.py --home HOU --away UTAH\n",
+      "timeoutSeconds": 120
+    },
+    "sessionTarget": "isolated",
+    "delivery": {
+      "mode": "announce",
+      "channel": "telegram",
+      "to": "REDACTED"
+    },
+    "enabled": true
+  }
+]

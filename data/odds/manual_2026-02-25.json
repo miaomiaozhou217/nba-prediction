@@ -1,0 +1,19 @@
+{
+  "source": "bet365_screenshot",
+  "date": "2026-02-25",
+  "captured_at": "2026-02-24T16:42+10:30",
+  "games": [
+    {"game": "PHI@IND", "time": "10:40", "total": 235.0, "odds": 1.90},
+    {"game": "DAL@BKN", "time": "11:10", "total": 224.5, "odds": 1.90},
+    {"game": "NY@CLE", "time": "11:10", "total": 230.5, "odds": 1.90},
+    {"game": "OKC@TOR", "time": "11:10", "total": 218.5, "odds": 1.90},
+    {"game": "WAS@ATL", "time": "11:10", "total": 235.5, "odds": 1.90},
+    {"game": "CHA@CHI", "time": "11:40", "total": 229.5, "odds": 1.90},
+    {"game": "GS@NOP", "time": "11:40", "total": 224.5, "odds": 1.90},
+    {"game": "MIA@MIL", "time": "11:40", "total": 228.0, "odds": 1.90},
+    {"game": "BOS@PHX", "time": "12:40", "total": 209.5, "odds": 1.90},
+    {"game": "MIN@POR", "time": "13:40", "total": 233.5, "odds": 1.90},
+    {"game": "ORL@LAL", "time": "14:10", "total": 230.0, "odds": 1.90}
+  ],
+  "notes": "All totals at 1.90 odds. Times in Adelaide local time."
+}

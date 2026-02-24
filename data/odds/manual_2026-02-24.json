@@ -1,0 +1,42 @@
+[
+  {
+    "date": "2026-02-24",
+    "game": "SA@DET",
+    "home": "DET",
+    "away": "SA",
+    "line_bet365": 230.0,
+    "prediction_v3": 230.7,
+    "deviation": 0.7,
+    "bet_placed": false,
+    "actual_total": null,
+    "source": "manual_bet365"
+  },
+  {
+    "date": "2026-02-24",
+    "game": "SAC@MEM",
+    "home": "MEM",
+    "away": "SAC",
+    "line_bet365": 232.5,
+    "prediction_v3": 236.7,
+    "deviation": 4.2,
+    "bet_placed": true,
+    "bet_direction": "OVER",
+    "bet_amount_aud": 15,
+    "bet_odds": 1.90,
+    "actual_total": null,
+    "source": "manual_bet365"
+  },
+  {
+    "date": "2026-02-24",
+    "game": "UTA@HOU",
+    "home": "HOU",
+    "away": "UTA",
+    "line_bet365": 228.5,
+    "prediction_v3": 253.4,
+    "deviation": 24.9,
+    "bet_placed": false,
+    "skip_reason": "anomalous_deviation",
+    "actual_total": null,
+    "source": "manual_bet365"
+  }
+]
